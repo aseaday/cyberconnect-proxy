@@ -25,6 +25,5 @@ export default async function handler(req, res) {
     method: "post"
   }
   const response = await axios(config);
-  console.log(response.data);
-  res.status(200).json({ name: 'John Doe' })
+  res.status(200).json(response.data);
 }
